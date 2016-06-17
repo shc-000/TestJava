@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- Spring配置文件的根元素，使用spring-beans-4.0.xsd语义约束 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<!-- 配置chinese实例，其实现类是Chinese类 -->
+	<bean id="chinese" class="com.shc.spring.service.impl.Chinese">
+		<!-- 驱动调用chinese的setAxe()方法，将容器中stoneAxe作为传入参数 -->
+		<property name="axe" ref="stoneAxe"/>
+		<property name="name" value="Model_frog"/>
+		<!-- 参数类型要对应 <property name="age" value="Model_110"/>-->
+		<property name="age" value="18"/>
+	</bean>
+	<!-- 配置stoneAxe实例，其实现类是StoneAxe -->
+	<bean id="stoneAxe" class="com.shc.spring.service.impl.StoneAxe"/>
+	<!-- 配置steelAxe实例，其实现类是SteelAxe -->
+	<bean id="steelAxe" class="com.shc.spring.service.impl.SteelAxe"/>
+</beans>
