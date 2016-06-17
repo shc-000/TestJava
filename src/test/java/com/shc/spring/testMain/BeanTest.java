@@ -3,27 +3,21 @@ package com.shc.spring.testMain;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.shc.spring.service.*;
+import com.shc.spring.service.Person;
 /**
- * Description:
- * <br/>网站: <a href="http://www.crazyit.org">疯狂Java联盟</a>
- * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
- * <br/>This program is protected by copyright laws.
- * <br/>Program Name:
- * <br/>Date:
- * @author  Yeeku.H.Lee kongyeeku@163.com
- * @version  1.0
+ * @author shc
  */
 public class BeanTest
 {
 	public static void main(String[] args)throws Exception
 	{
 		// 创建Spring容器
-		ApplicationContext ctx = new
-			ClassPathXmlApplicationContext("beans.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 		// 获取chinese 实例
 		Person p = ctx.getBean("chinese" , Person.class);
 		// 调用useAxe()方法
 		p.useAxe();
+		p.getName();
+		p.getAge();
 	}
 }

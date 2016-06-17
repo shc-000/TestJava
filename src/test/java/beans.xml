@@ -8,6 +8,9 @@
 	<bean id="chinese" class="com.shc.spring.service.impl.Chinese">
 		<!-- 驱动调用chinese的setAxe()方法，将容器中stoneAxe作为传入参数 -->
 		<property name="axe" ref="stoneAxe"/>
+		<property name="name" value="Model_frog"/>
+		<!-- 参数类型要对应 <property name="age" value="Model_110"/>-->
+		<property name="age" value="18"/>
 	</bean>
 	<!-- 配置stoneAxe实例，其实现类是StoneAxe -->
 	<bean id="stoneAxe" class="com.shc.spring.service.impl.StoneAxe"/>
