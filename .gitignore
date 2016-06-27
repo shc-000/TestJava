@@ -1,1 +1,10 @@
 /target
+*.class    #过滤所有.class文件
+.DS_Store
+.classpath
+.pom.properties
+.settings
+.MANIFEST.MF
+.project
+
+
