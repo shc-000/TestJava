@@ -5,15 +5,12 @@ public class  Singleton02 {
 	private static Singleton02 instance;
 	//2.私有的构造器
 	private Singleton02(){
-		if(instance!=null){
-			throw new RuntimeException();//防止反射和反序列化漏洞
-		}
 	}
 	//3.公有get方法
-	public static synchronized Singleton02 getInstance(){
+	public static synchronized Singleton02 getInstance(){//可能会同时被多个线程访问，因此加同步快，造成调用效率低
 	//要防止线程同步
 		if(null==instance){
-			return new Singleton02();//延时加载
+			instance = new Singleton02();//延时加载
 		}
 		return instance;
 	}
