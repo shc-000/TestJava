@@ -1,6 +1,9 @@
 package com.shc.singleton;
+
+import java.io.Serializable;
+
 //静态内部类，兼备了高效调用和延迟加载的优势
-public class Singleton03 {
+public class Singleton03 implements Serializable{
 	//外部类没有static属性，则不会像饿汉式那样立即加载对象
 	private static class SingletonClassInstance{
 		private static final Singleton03 instance=new Singleton03();

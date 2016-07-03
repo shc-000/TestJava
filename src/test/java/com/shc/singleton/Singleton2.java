@@ -9,9 +9,9 @@ public class Singleton2 {
 	//2.私有的构造器
 	private Singleton2(){
 		System.out.println(instance);//每次都是null,因为到这里还没有初始化
-		/*if (null != instance) {
+		if (null != instance) {
 			throw new RuntimeException();
-		}*/
+		}
 	}
 	//3.公有get方法
 	public static synchronized Singleton2 getInstance(){//可能会同时被多个线程访问，因此加同步快，造成调用效率低

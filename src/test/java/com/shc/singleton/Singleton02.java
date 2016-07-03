@@ -1,6 +1,9 @@
 package com.shc.singleton;
+
+import java.io.Serializable;
+
 //懒汉式
-public class  Singleton02 {
+public class  Singleton02 implements Serializable{
 	//1.私有的静态的变量
 	private static Singleton02 instance;
 	//2.私有的构造器
