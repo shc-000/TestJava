@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 /**
  * 测试ResultSet结果集的基本用法
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo04 {

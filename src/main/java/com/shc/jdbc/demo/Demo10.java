@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 /**
  * 测试BLOB  二进制大对象的使用
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo10 {
@@ -31,7 +31,7 @@ public class Demo10 {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testShao","root","");
 			
 //			ps = conn.prepareStatement("insert into t_user (username,headImg) values (?,?) ");
-//			ps.setString(1, "高淇");
+//			ps.setString(1, "shc");
 //			ps.setBlob(2, new FileInputStream("d:/icon.jpg"));
 //			ps.execute();
 			

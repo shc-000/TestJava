@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 /**
  * 测试跟数据库建立连接
- * @author Administrator
+ * @author shc
  *
  */
 public class Demo01 {

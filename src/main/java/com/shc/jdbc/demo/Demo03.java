@@ -10,7 +10,7 @@ import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
 
 /**
  * 测试PreparedStatement的基本用法
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo03 {
@@ -24,12 +24,12 @@ public class Demo03 {
 			
 			String sql = "insert into t_user (username,pwd,regTime) values (?,?,?)";  //?占位符
 			ps = conn.prepareStatement(sql);
-//			ps.setString(1, "高淇3");	//参数索引是从1开始计算， 而不是0
+//			ps.setString(1, "shc1");	//参数索引是从1开始计算， 而不是0
 //			ps.setString(2, "123456");
 //			ps.setDate(3, new java.sql.Date(System.currentTimeMillis()));
 			
 			//可以使用setObject方法处理参数
-			ps.setObject(1, "高淇5");
+			ps.setObject(1, "shc2");
 			ps.setObject(2, "234567");
 			ps.setObject(3, new java.sql.Date(System.currentTimeMillis()));
 			

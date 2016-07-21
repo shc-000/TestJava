@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 /**
  * 测试事务的基本概念和用法
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo06 {
@@ -25,10 +25,10 @@ public class Demo06 {
 			conn.setAutoCommit(false); //JDBC中默认是true，自动提交事务
 			
 			ps1 = conn.prepareStatement("insert into t_user (username,pwd) values (?,?)");
-			ps1.setObject(1, "高淇");
+			ps1.setObject(1, "shc");
 			ps1.setObject(2, "123456");
 			ps1.execute();
-			System.out.println("插入一个用户,高淇");
+			System.out.println("插入一个用户,shc");
 			
 			try {
 				Thread.sleep(6000);
@@ -37,10 +37,10 @@ public class Demo06 {
 			}
 			
 			ps2 = conn.prepareStatement("insert into t_user (username,pwd) values (?,?,?)");
-			ps2.setObject(1, "马士兵");
+			ps2.setObject(1, "chao");
 			ps2.setObject(2, "123456");
 			ps2.execute();			
-			System.out.println("插入一个用户,马士兵");
+			System.out.println("插入一个用户,chao");
 			
 			
 			conn.commit();

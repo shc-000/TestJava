@@ -6,8 +6,7 @@ import java.sql.Statement;
 
 /**
  * 测试Statement接口的用法，执行SQL语句，以及SQL注入问题
- * @author Administrator
- *
+ * @author shc
  */
 public class Demo02 {
 	public static void main(String[] args) {

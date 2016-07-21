@@ -11,7 +11,7 @@ import java.sql.SQLException;
 /**
  * 测试CLOB  文本大对象的使用
  * 包含：将字符串、文件内容插入数据库中的CLOB字段、将CLOB字段值取出来的操作。
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo09 {

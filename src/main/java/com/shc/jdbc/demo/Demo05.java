@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 /**
  * 测试批处理的基本用法
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo05 {
@@ -27,7 +27,7 @@ public class Demo05 {
 			stmt = conn.createStatement();
 			
 			for(int i=0;i<20000;i++){
-				stmt.addBatch("insert into t_user (username,pwd,regTime) values ('gao"+i+"',666666,now())");
+				stmt.addBatch("insert into t_user (username,pwd,regTime) values ('shao"+i+"',666666,now())");
 			}
 			stmt.executeBatch();
 			conn.commit();  //提交事务

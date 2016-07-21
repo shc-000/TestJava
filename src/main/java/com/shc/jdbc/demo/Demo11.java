@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 /**
  * 测试使用JDBCUtil工具类来简化JDBC开发
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo11 {
@@ -27,7 +27,7 @@ public class Demo11 {
 			conn = JDBCUtil.getMysqlConn();
 			
 			ps = conn.prepareStatement("insert into t_user (username) values (?)");
-			ps.setString(1, "gaoqi");
+			ps.setString(1, "chao1");
 			ps.execute();
 			
 		} catch (Exception e) {

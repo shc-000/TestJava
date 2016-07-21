@@ -14,7 +14,7 @@ import java.util.Random;
 
 /**
  * 测试时间处理(java.sql.Date,Time,Timestamp),取出指定时间段的数据
- * @author 高淇 www.sxt.cn
+ * @author shc
  *
  */
 public class Demo08 {

@@ -2,7 +2,11 @@ package com.shc.jdbc.pojo;
 import java.util.*;
 import java.sql.*;
 
-
+/**
+ * 
+ * @author shc
+ *
+ */
 
 public class T_user2{
 	private Integer id;
