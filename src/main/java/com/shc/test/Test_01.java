@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Test_01 {
 
+public class Test_01 {
+/*
 	public static Date d = new Date();
 	public static final Date d1 = new Date();
 	public static void main(String[] args) {
@@ -20,12 +21,12 @@ public class Test_01 {
 		System.out.println(list.size());
 		//date.setDate(1);
 		
-		/*try {
+		try {
 			new Thread().sleep(1);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
 		
 		Date date1 = new Date();
 		System.out.println(System.currentTimeMillis());
@@ -35,6 +36,12 @@ public class Test_01 {
 		System.out.println(d.equals(d1));
 		System.out.println(list.size());
 		
+	}*/
+	public static void main(String[] args) {
+		/*TestSwitch tsSwitch = new TestSwitch();
+		tsSwitch.test(1);*/
+		String genseeUid = RandomUtils.getRandom(8);
+		System.out.println(genseeUid);
 	}
 
 }
