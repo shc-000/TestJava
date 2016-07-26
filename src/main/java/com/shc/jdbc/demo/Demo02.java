@@ -20,7 +20,7 @@ public class Demo02 {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testShao","root","");
 			
 			stmt = conn.createStatement();
-//			String name = "赵六";
+//			String name = "shc";
 //			String sql = "insert into t_user (username,pwd,regTime) values ('"+name+"',66666,now())";
 //			stmt.execute(sql);
 			

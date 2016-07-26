@@ -14,8 +14,6 @@ public class T_user2{
 	private String username;
 	private java.sql.Time regTime;
 
-
-
 	public void setId(Integer id){
 		this.id=id;
 	}

@@ -20,7 +20,7 @@ public class Demo01 {
 			//真正开发中，为了提高效率，都会使用连接池来管理连接对象！
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testShao","root","");
 			long end = System.currentTimeMillis();
-			System.out.println(conn);
+			System.out.println(conn);//com.mysql.jdbc.JDBC4Connection@30f1a58d
 			System.out.println("建立连接，耗时："+(end-start)+"ms毫秒");
 			
 			

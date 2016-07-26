@@ -28,7 +28,7 @@ public class Demo09 {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testShao","root","");
 			
 //			ps = conn.prepareStatement("insert into t_user (username,myInfo) values (?,?) ");
-//			ps.setString(1, "高淇");
+//			ps.setString(1, "shc");
 //			ps.setClob(2, new FileReader(new File("d:/a.txt")));  //将文本文件内容直接输入到数据库中
 			//将程序中的字符串输入到数据库的CLOB字段中
 //			ps.setClob(2, new BufferedReader(new InputStreamReader(new ByteArrayInputStream("aaaabbbbbb".getBytes()))));
